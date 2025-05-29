@@ -258,6 +258,7 @@
         slide.classList.toggle('active', index === currentIndex);
       });
       prevBtn.style.display = currentIndex > 0 ? 'block' : 'none';
+      nextBtn.style.display = currentIndex == 2 ? 'none' : 'block';
     }
 
     function nextSlide() {
