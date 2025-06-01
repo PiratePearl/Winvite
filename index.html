@@ -7,6 +7,20 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: sans-serif; background: #f4e7e7; color: #fff; }
+
+     @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .playwrite-hu-fonty {
+      font-family: "Playwrite HU", cursive;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      color: #e079b5;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
     .carousel {
       position: relative;
       width: 100%;
@@ -156,10 +170,10 @@
 
 
     @media screen and (max-width: 768px) {
-      .carousel {
-        margin: 85px auto;
-      }
-
+      .carousel {margin: 85px auto;}
+      
+      .playwrite-hu-fonty {font-size: 16px;}
+      .bouncing-loader > div {width: 8px;height: 8px;}
       
     }
 
@@ -170,6 +184,7 @@
   <div id="loader">
     <div class="loader-content">
       <div class="bouncing-loader">
+        <p class="playwrite-hu-fonty">Love Story In Motion&nbsp;</p>
         <div></div>
         <div></div>
         <div></div>
